@@ -1,0 +1,64 @@
+<div id="wrap">
+      <div class="navbar navbar-default navbar-fixed-top">
+        <div class="container">
+          <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="">Atmecs</a>
+          </div>
+      <div class="collapse navbar-collapse">
+            <form ng-submit="log()" class="navbar-form navbar-right" id="header-form" role="form">
+          <div class="lt-left">
+            <div class="form-group">
+            <label for="exampleInputEmail2">User Name </label>
+            <input type="text" class="form-control input-sm" id="exampleInputEmail2" ng-model= login.username placeholder="User Name">
+            </div>
+            <div class="form-group">
+            <label for="exampleInputPassword2">Password</label>
+            <input type="password" class="form-control input-sm" id="exampleInputPassword2" ng-model = login.password placeholder="Password">
+            </div>
+            <div class="checkbox">
+            <label>
+              <input type="checkbox"> Remember me
+            </label>
+            </div>
+          </div>
+          <div class="lt-right">
+          <button  type="submit" class="login-btn">Login</button>
+          </div>
+        </form>
+            
+          </div>
+        </div>
+      </div>
+      <div class="container" id="home">
+    <div class="row">
+     
+     
+      <div class="col-md-5">
+      <form ng-submit="createAccount()" class="form" role="form">
+      <legend><a>Create your account</a></legend>
+            <input class="form-control input-lg" ng-model=info.UserName name="UserName" placeholder="User Name" type="text" />
+            
+            <input class="form-control input-lg" name="password" ng-model=info.password id="password" placeholder="Password" type="password" />
+            <input class="form-control input-lg" name="reenterPassword" id = "reenterPassword" ng-model=info.reenterPassword placeholder="Re-enter Password" type="password" />
+            <span ng-show = 'clear' >Password doesnt match reEnter the password</span>
+            <span ng-show = 'message'>{{msg}} </span>
+            <br />
+            
+          
+            
+            <button class="btn btn-lg btn-primary btn-block signup-btn" type="submit">
+                Create my account</button>
+            </form>
+            </div>
+            </div>
+            
+      
+      </div>
+    </div>
+    
+

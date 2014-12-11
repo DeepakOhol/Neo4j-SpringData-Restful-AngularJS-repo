@@ -1,0 +1,39 @@
+<div class="navbar navbar-fixed-top navbar-inversetab">
+	<div class="user-info">
+		<span id="search-box"><input type="text" name="searchBox" placeholder="Search here" id="searchBox" ng-model="searchBox"/></span>
+		<span id="homepage"><a href="" id="atext">Home</a></span>
+		<span id="name"><a href="" id="atext">{{username}}</a></span>
+		<span id="profile"><a href="" id="atext">Profile</a></span>
+		<span id="logout"><a href="" id="atext">Logout</a></span>
+	</div>
+		
+</div> 
+
+<div  class="container-left">
+     <a href="javascript:;" onClick="change('Inbox')">Inbox</a><br />
+     <a href="javascript:;" onClick="change('Sent')">Sent</a><br />
+     <a href="javascript:;" onClick="change('Draft')">Draft</a><br />
+     <a href="javascript:;" onClick="change('Friends')">Friends</a><br />
+     <a href="javascript:;" onClick="change('Find')">Find</a><br />
+     <a href="javascript:;" onClick="change('Pages')">Pages</a><br />
+     <a href="javascript:;" onClick="change('Likes')">Likes</a><br />
+
+	<button ng-click="inbox()">Inbox</button><br />
+	<button ng-click="sent()">Sent</button><br />
+	<button ng-click="draft()">Draft</button><br />
+     
+</div>
+<div id="container-home">
+<!--      <div ng-include="'partials/sent.html'"></div>
+     <div ng-include="'partials/draft.html'"></div> -->
+     
+</div>
+ 
+<div class="container-right">
+     <a href="1">Chat</a><br />
+     <a href="1">View</a><br />
+     
+</div>
+ <!-- <div class="copy-right">
+  <center>Copyright © 2014 atmecs.com</center>
+</div>  -->
